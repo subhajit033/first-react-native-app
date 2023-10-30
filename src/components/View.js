@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, Pressable } from 'react-native';
 import { useTailwind } from 'tailwind-rn';
 const UserView = () => {
   const tailwind = useTailwind();
@@ -18,40 +18,22 @@ const UserView = () => {
       url: data?.results[0]?.picture?.large,
     });
   };
-  const users = [
-    {
-      name: 'Subhajit',
-      url: 'https://avatars.githubusercontent.com/u/112102927?v=4',
-    },
-    {
-      name: 'Sourav',
-      url: 'https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?pid=ImgDet&rs=1',
-    },
-    {
-      name: 'Bubai',
-      url: 'https://images3.alphacoders.com/165/thumb-1920-165265.jpg',
-    },
-    {
-      name: 'Tubai',
-      url: 'https://th.bing.com/th/id/OIP.zeNPNbcmNiwHlHBapcLdBAHaE7?pid=ImgDet&rs=1',
-    },
-    {
-      name: 'Bibek',
-      url: 'https://th.bing.com/th/id/OIP.oYqMOEf80ebDR5N4NSL_rQHaEo?pid=ImgDet&w=474&h=296&rs=1',
-    },
-  ];
 
   return !myName ? (
-    <Text>Loading....</Text>
+    <Text style={styles.container}>Loading....</Text>
   ) : (
     <View style={styles.container}>
-      <Button title='click me' onPress={() => getUsers()} />
-      <Text style={tailwind('text-red-800')}>Hi this is {myName.name}</Text>
+      <Pressable style={tailwind('bg-green-400 p-2 rounded-md')} onPress={getUsers}>
+        <Text style={tailwind('text-gray-200')}>Click Me</Text>
+      </Pressable>
+      <Text style={tailwind('text-red-800 text-2xl')}>
+        Hi this is {myName.name}
+      </Text>
       <Image
         source={{
           uri: myName.url,
         }}
-        style={{ width: 300, height: 200 }}
+        style={tailwind('w-40 h-40 rounded-full my-4')}
       />
       <StatusBar style='auto' />
     </View>
