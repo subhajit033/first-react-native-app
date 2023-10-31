@@ -23,10 +23,13 @@ const UserView = () => {
     <Text style={styles.container}>Loading....</Text>
   ) : (
     <View style={styles.container}>
-      <Pressable style={tailwind('bg-green-400 p-2 rounded-md')} onPress={getUsers}>
+      <Pressable
+        style={tailwind('bg-blue-400 p-2 rounded-md')}
+        onPress={getUsers}
+      >
         <Text style={tailwind('text-gray-200')}>Click Me</Text>
       </Pressable>
-      <Text style={tailwind('text-red-800 text-2xl')}>
+      <Text style={tailwind('text-red-200 text-2xl')}>
         Hi this is {myName.name}
       </Text>
       <Image

@@ -1,75 +1,212 @@
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
+@import url(https://fonts.googleapis.com/css?family=Akronim);
 
-.my-4 {
+.my-4{
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem
 }
 
-.my-8 {
+.my-8{
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem
 }
 
-.flex {
-  display: flex;
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem
 }
 
-.h-40 {
-  height: 10rem;
+.mt-12{
+  margin-top: 3rem
 }
 
-.w-40 {
-  width: 10rem;
+.mt-4{
+  margin-top: 1rem
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.mb-8{
+  margin-bottom: 2rem
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.mr-4{
+  margin-right: 1rem
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.flex{
+  display: flex
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
+.h-40{
+  height: 10rem
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
+.h-8{
+  height: 2rem
 }
 
-.bg-red-400 {
+.h-12{
+  height: 3rem
+}
+
+.w-40{
+  width: 10rem
+}
+
+.w-32{
+  width: 8rem
+}
+
+.w-56{
+  width: 14rem
+}
+
+.flex-1{
+  flex: 1 1 0%
+}
+
+.flex-row{
+  flex-direction: row
+}
+
+.items-center{
+  align-items: center
+}
+
+.justify-start{
+  justify-content: flex-start
+}
+
+.justify-end{
+  justify-content: flex-end
+}
+
+.justify-center{
+  justify-content: center
+}
+
+.rounded-full{
+  border-radius: 9999px
+}
+
+.rounded-md{
+  border-radius: 0.375rem
+}
+
+.rounded-lg{
+  border-radius: 0.5rem
+}
+
+.border-2{
+  border-width: 2px
+}
+
+.border{
+  border-width: 1px
+}
+
+.border-blue-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity))
+}
+
+.bg-blue-400{
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity))
 }
 
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+.p-2{
+  padding: 0.5rem
 }
 
-.p-2 {
-  padding: 0.5rem;
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
 }
 
-.text-2xl {
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+.text-2xl{
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2rem
 }
 
-.text-red-800 {
-  --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity));
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem
 }
 
-.text-gray-200 {
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1
+}
+
+.font-bold{
+  font-weight: 700
+}
+
+.text-gray-200{
   --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
+  color: rgb(229 231 235 / var(--tw-text-opacity))
+}
+
+.text-red-200{
+  --tw-text-opacity: 1;
+  color: rgb(254 202 202 / var(--tw-text-opacity))
+}
+
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity))
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity))
+}
+
+.text-blue-200{
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity))
+}
+
+.text-green-200{
+  --tw-text-opacity: 1;
+  color: rgb(187 247 208 / var(--tw-text-opacity))
 }
